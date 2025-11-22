@@ -1,0 +1,58 @@
+{
+  "name": "dj-set-manager-jcci",
+  "version": "1.0.0",
+  "description": "DJ Set List Manager for One Love Jamaica Relief - JCCI Event Management System",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "test-api": "node scripts/test-api.js",
+    "populate": "node scripts/populate-slots.js && node scripts/add-djs.js",
+    "dev": "node src/index.js",
+    "test": "node --test tests/*.test.js",
+    "lint": "eslint src scripts",
+    "event:start": "node scripts/event-start.js",
+    "event:metrics": "node scripts/metrics-entry.js",
+    "event:complete": "node scripts/event-complete.js",
+    "event:report": "node scripts/generate-report.js",
+    "dj:list": "node scripts/dj-list.js",
+    "dj:confirm": "node scripts/dj-confirm.js",
+    "dj:remind": "node scripts/dj-remind.js",
+    "analytics:export": "node scripts/export-data.js",
+    "analytics:report": "node scripts/analytics-report.js"
+  },
+  "keywords": [
+    "airtable",
+    "event-management",
+    "dj-booking",
+    "automation",
+    "fundraiser",
+    "jamaica",
+    "jcci",
+    "nodejs"
+  ],
+  "author": "Don McLeod <don@jccint.org>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbucknor/dj-set-manager-jcci.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dbucknor/dj-set-manager-jcci/issues"
+  },
+  "homepage": "https://github.com/dbucknor/dj-set-manager-jcci#readme",
+  "dependencies": {
+    "airtable": "^0.12.2",
+    "dotenv": "^17.2.3",
+    "chalk": "^5.3.0",
+    "inquirer": "^9.2.12",
+    "ora": "^7.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.55.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
